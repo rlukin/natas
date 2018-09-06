@@ -41,11 +41,11 @@ class natas15():
 
     def get_alphabet(self):
         """ Shrink possible chars pool """
-        passwd_alphabet = ''
+        alphabet = ''
         for char in string.printable:
             if self.blind_sql_injection("password regexp '.*[%s].*'" % char):
-                passwd_alphabet += char
-        return passwd_alphabet
+                alphabet += char
+        return alphabet
 
     def brute_password(self):
         password = ''
